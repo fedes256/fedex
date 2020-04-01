@@ -3,7 +3,8 @@ RUN yum install -y nc \
                    telnet \
                    postgresql \
                    httpd \
-                   wget
+                   wget \
+                   sshd
 EXPOSE 22 80
 CMD ["/usr/sbin/init","/bin/bash"]]
 #CMD ["/bin/bash"]
