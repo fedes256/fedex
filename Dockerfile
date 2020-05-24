@@ -4,7 +4,8 @@ RUN yum install -y nc \
                    postgresql \
                    httpd \
                    wget \
+                   curl \
                    sshd
-EXPOSE 22 80
+EXPOSE 22 80 21
 CMD ["/usr/sbin/init","/bin/bash"]]
 #CMD ["/bin/bash"]
