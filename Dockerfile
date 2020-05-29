@@ -5,7 +5,9 @@ RUN yum install -y nc \
                    httpd \
                    wget \
                    curl \
-                   sshd
+                   sshd \
+                   libssh2 \
+                   libcurl
 EXPOSE 22 80 21
 CMD ["/usr/sbin/init","/bin/bash"]]
 #CMD ["/bin/bash"]
