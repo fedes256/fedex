@@ -4,9 +4,9 @@ FROM httpd:2.4
 #                   telnet \
 #                   wget \
 #                   httpd
-COPY httpd.conf /etc/httpd/httpd.conf
-COPY ./test.pdf /usr/local/apache2/htdocs/
-EXPOSE 80
+COPY httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY test.pdf /usr/local/apache2/htdocs/
+EXPOSE 8080
 #CMD ["/usr/sbin/init","/bin/bash","/usr/sbin/httpd"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 #CMD ["/usr/sbin/httpd"]
