@@ -9,5 +9,5 @@ COPY ./test.pdf /usr/local/apache2/htdocs/
 EXPOSE 80
 #CMD ["/usr/sbin/init","/bin/bash","/usr/sbin/httpd"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-CMD ["/usr/sbin/httpd"]
+#CMD ["/usr/sbin/httpd"]
 #CMD ["/bin/bash"]
