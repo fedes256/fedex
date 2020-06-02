@@ -5,6 +5,7 @@ RUN export http_proxy=http://192.168.101.101:8080/ \
                    wget \
                    httpd
 COPY httpd.conf /etc/httpd/httpd.conf
+COPY test.pdf /var/www/html/test.pdf
 EXPOSE 80
 CMD ["/usr/sbin/init","/bin/bash"]
 CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
