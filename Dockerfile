@@ -9,5 +9,5 @@ COPY test.pdf /var/www/html/test.pdf
 EXPOSE 80
 CMD ["/usr/sbin/init","/bin/bash"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+ENTRYPOINT ["/usr/sbin/httpd","-DFOREGROUND"]
 #CMD ["/bin/bash"]
