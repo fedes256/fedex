@@ -8,5 +8,5 @@ COPY httpd.conf /etc/httpd/httpd.conf
 COPY test.pdf /var/www/html/test.pdf
 EXPOSE 80
 CMD ["/usr/sbin/init","/bin/bash"]
-CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
+CMD ["/bin/httpd", "-D", "FOREGROUND"]
 #CMD ["/bin/bash"]
