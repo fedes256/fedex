@@ -1,4 +1,4 @@
-FROM httpd:2.4
+FROM httpd:latest
 #RUN export http_proxy=http://192.168.101.101:8080/ \
 #&& yum install -y nc \
 #                   telnet \
