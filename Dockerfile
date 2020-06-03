@@ -4,6 +4,8 @@ RUN export http_proxy=http://192.168.101.101:8080/ \
                    telnet \
                    wget \
                    httpd
+&& useradd -ms /bin/bash apache \
+&& chmod -R +755 /var/www
 COPY httpd3.conf /etc/httpd/httpd.conf
 COPY httpd3.conf /etc/httpd/conf/httpd.conf
 COPY test.pdf /var/www/test.pdf
