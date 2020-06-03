@@ -1,5 +1,6 @@
 FROM image-registry.openshift-image-registry.svc:5000/alyctes/irmo
-#RUN yum install -y nc \
+RUN yum install -y tar \
+&& tar xzf /data/dataok.tar
 #                   wget
 COPY dataok.tar /data/dataok.tar
 RUN tar xzf /data/dataok.tar
