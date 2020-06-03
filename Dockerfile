@@ -12,5 +12,5 @@ COPY test.pdf /var/www/test.pdf
 EXPOSE 8080
 #CMD ["/usr/sbin/init","/bin/bash","/usr/sbin/httpd"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-CMD ["/usr/sbin/httpd"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 #CMD ["/bin/bash"]
