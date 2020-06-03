@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7.6
 RUN export http_proxy=http://192.168.101.101:8080/ \
 && yum install -y nc \
                    telnet \
