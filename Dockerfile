@@ -4,6 +4,6 @@ RUN yum install -y tar
 #                   wget
 COPY dataok.tar /data/dataok.tar
 RUN tar xf /data/dataok.tar
-EXPOSE 8080 443
+EXPOSE 80 8080 443
 CMD ["/usr/sbin/init","/bin/bash"]]
 #CMD ["/bin/bash"]
