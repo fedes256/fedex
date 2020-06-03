@@ -1,11 +1,11 @@
-FROM httpd:latest
+FROM httpd-2.4
 #RUN export http_proxy=http://192.168.101.101:8080/ \
 #&& yum install -y nc \
 #                   telnet \
 #                   wget \
 #                   httpd
-COPY httpd.conf /usr/local/apache2/conf/httpd.conf
-COPY test.pdf /usr/local/apache2/htdocs/
+COPY httpd.conf /etc/httpd/conf/httpd.conf
+COPY index.html /opt/app-root/src
 EXPOSE 8080
 #CMD ["/usr/sbin/init","/bin/bash","/usr/sbin/httpd"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
