@@ -4,7 +4,7 @@ FROM httpd-2.4
 #                   telnet \
 #                   wget \
 #                   httpd
-COPY httpd.conf /etc/httpd/conf/httpd.conf
+COPY httpd2.conf /etc/httpd/conf/httpd.conf
 COPY index.html /opt/app-root/src
 EXPOSE 8080
 #CMD ["/usr/sbin/init","/bin/bash","/usr/sbin/httpd"]
